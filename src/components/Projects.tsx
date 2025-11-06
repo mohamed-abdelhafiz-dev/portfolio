@@ -1,10 +1,36 @@
-// src/components/Projects.jsx
 import { motion } from "framer-motion";
 
 const projects = [
-  { title: "Weather App", desc: "React + API", link: "#" },
-  { title: "E-Commerce", desc: "Full MERN App", link: "#" },
-  { title: "Social Media App", desc: "Authentication + CRUD", link: "#" },
+  {
+    title: "Weatherly App",
+    desc: "A modern web application built to provide accurate and real-time weather updates with a seamless user experience.",
+    link: "https://github.com/mohamed-abdelhafiz-dev/React-Weatherly-App",
+  },
+  {
+    title: "Reading Corner App",
+    desc: "A sleek, modern web application that helps users discover and manage their favorite books. Powered by the Google Books API and built with React, TypeScript, and Redux Toolkit",
+    link: "https://github.com/mohamed-abdelhafiz-dev/Reading-Corner-App",
+  },
+  {
+    title: "E-Commerce Website",
+    desc: "E-commerce multi-page website like Amazon using html,css,js and api to fetch the products from supersimplebackend.dev/products",
+    link: "https://github.com/mohamed-abdelhafiz-dev/E-Commerce-website",
+  },
+  {
+    title: "Todo App",
+    desc: "Todo-list app using react.js with some cool features that helped me practise while learning react.",
+    link: "https://github.com/mohamed-abdelhafiz-dev/React-Todo-app",
+  },
+  {
+    title: "Note Taking App",
+    desc: "A note-taking app built with React and TypeScript, featuring a clean UI and local storage support.",
+    link: "https://github.com/mohamed-abdelhafiz-dev/Note-taking-app",
+  },
+  {
+    title: "Currency Converter App",
+    desc: "Currency-Converter-App using react , TypeScript and tailwind with api for real time currency conversion rate",
+    link: "https://github.com/mohamed-abdelhafiz-dev/React-Currency-Converter-App",
+  },
 ];
 
 export default function Projects() {
@@ -23,6 +49,7 @@ export default function Projects() {
             transition={{ duration: 0.4 }}
             key={i}
             href={p.link}
+            target="_blank"
             className="p-6 border border-[#00eaff] rounded-xl"
           >
             <h3 className="text-2xl font-semibold">{p.title}</h3>

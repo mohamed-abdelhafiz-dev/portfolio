@@ -1,14 +1,29 @@
-// src/components/Skills.jsx
-import { motion } from 'framer-motion'
+import { motion } from "framer-motion";
 
 const skills = [
-  "JavaScript", "React", "Node.js", "MongoDB", "Git", "Tailwind CSS"
-]
+  "html",
+  "CSS",
+  "JavaScript",
+  "React",
+  "Redux",
+  "Tanstack Query",
+  "React hook Form",
+  "Tailwind CSS",
+  "Node.js",
+  "Express.js",
+  "TypeScript",
+  "MongoDB",
+  "Git",
+  "GitHub",
+  "RESTful APIs",
+];
 
 export default function Skills() {
   return (
     <section id="skills" className="p-20 text-center bg-[#0f0f0f]">
-      <h2 className="text-4xl font-bold mb-10 drop-shadow-[0_0_10px_#00eaff]">Skills</h2>
+      <h2 className="text-4xl font-bold mb-10 drop-shadow-[0_0_10px_#00eaff]">
+        Skills
+      </h2>
       <div className="flex flex-wrap justify-center gap-4 max-w-3xl mx-auto">
         {skills.map((skill, i) => (
           <motion.span
@@ -21,5 +36,5 @@ export default function Skills() {
         ))}
       </div>
     </section>
-  )
+  );
 }

@@ -6,7 +6,7 @@ import Skills from "./components/Skills";
 
 function App() {
   return (
-    <div className="bg-[#0d0d0d] text-white min-h-screen font-sans scroll-smooth">
+    <div className="bg-[#0d0d0d] text-white min-h-screen font-sans scroll-smooth selection:bg-[#00eaff] selection:text-black">
       <Navbar />
       <Hero />
       <Projects />
